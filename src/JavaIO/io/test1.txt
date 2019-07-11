@@ -1,0 +1,4 @@
+Hello, world! 
+ 欢迎不会覆盖原本内容
+ -1
+相对于write，append可以写入nullnull
