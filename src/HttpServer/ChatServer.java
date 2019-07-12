@@ -14,7 +14,8 @@ public class ChatServer {
             BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(System.in))
         ){
             while(true) {
-                String iString = inputStream.readUTF();//读取信息要放在最前面，以读取客户端发来的信息
+                //读取信息要放在最前面，以读取客户端发来的信息
+                String iString = inputStream.readUTF();
                 System.out.println(iString);
                 String aString = bufferedReader.readLine();
                 if (aString.equals("bye")) break;
