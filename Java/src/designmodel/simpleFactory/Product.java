@@ -1,4 +1,4 @@
-package DesignModel.SimpleFactory;
+package designmodel.simpleFactory;
 
 public interface Product {
     void show();

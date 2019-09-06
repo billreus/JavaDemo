@@ -1,7 +1,7 @@
-package DesignModel.FactoryMethod;
+package designmodel.factoryMethod;
 
-import DesignModel.SimpleFactory.ConcreteProduct;
-import DesignModel.SimpleFactory.Product;
+import designmodel.simpleFactory.ConcreteProduct;
+import designmodel.simpleFactory.Product;
 
 public class ConcreteFactory extends Factory {
     public Product factoryMethod(){

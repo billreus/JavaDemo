@@ -1,4 +1,4 @@
-package DesignModel.Singleton;
+package designmodel.singleton;
 
 public class Singleton {
 

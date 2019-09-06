@@ -1,4 +1,4 @@
-package DesignModel.SimpleFactory;
+package designmodel.simpleFactory;
 //工厂
 public class SimpleFactory {
     public Product createProduct(int type){

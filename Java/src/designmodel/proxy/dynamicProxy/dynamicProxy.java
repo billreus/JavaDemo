@@ -1,15 +1,15 @@
-package DesignModel.Proxy.dynamicProxy;
+package designmodel.proxy.dynamicProxy;
 
-import DesignModel.Proxy.IUserDao;
-import DesignModel.Proxy.UserDao;
+import designmodel.proxy.iuserDao;
+import designmodel.proxy.userDao;
 
 public class dynamicProxy {
     public static void main(String[] args){
         //创建目标对象
-        IUserDao target = new UserDao();
+        iuserDao target = new userDao();
         System.out.println("目标对象: " + target.getClass());
         //代理对象
-        IUserDao proxy = (IUserDao)new ProxyFactory(target).getProxyInstance();
+        iuserDao proxy = (iuserDao)new proxyFactory(target).getProxyInstance();
         System.out.println("代理对象："+proxy.getClass());
         //执行代理对象的方法
         proxy.save();

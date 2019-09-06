@@ -1,4 +1,4 @@
-package DesignModel.SimpleFactory;
+package designmodel.simpleFactory;
 
 public class Clinet {
     public static void main(String[] args){

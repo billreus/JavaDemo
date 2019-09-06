@@ -1,14 +1,14 @@
-package DesignModel.Proxy.dynamicProxy;
+package designmodel.proxy.dynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-class ProxyFactory {
+class proxyFactory {
     // 接收一个目标对象
     private Object target;
 
-    public ProxyFactory(Object target) {
+    public proxyFactory(Object target) {
         this.target = target;
     }
 

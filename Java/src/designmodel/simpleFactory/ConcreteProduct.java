@@ -1,4 +1,4 @@
-package DesignModel.SimpleFactory;
+package designmodel.simpleFactory;
 //接口实体类
 public class ConcreteProduct implements Product {
 

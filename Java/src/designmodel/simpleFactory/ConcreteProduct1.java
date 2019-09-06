@@ -1,4 +1,4 @@
-package DesignModel.SimpleFactory;
+package designmodel.simpleFactory;
 
 public class ConcreteProduct1 implements Product {
 

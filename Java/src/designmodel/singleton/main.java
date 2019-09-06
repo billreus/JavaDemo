@@ -1,4 +1,4 @@
-package DesignModel.Singleton;
+package designmodel.singleton;
 
 public class main {
     public static void main(String[] args){

@@ -1,12 +1,12 @@
-package DesignModel.Proxy.staticProxy;
+package designmodel.proxy.staticProxy;
 
-import DesignModel.Proxy.IUserDao;
-import DesignModel.Proxy.UserDao;
+import designmodel.proxy.iuserDao;
+import designmodel.proxy.userDao;
 
 //静态代理
-public class UserDaoProxy implements IUserDao {
+public class userDaoProxy implements iuserDao {
     // 代理对象，需要维护一个目标对象
-    private IUserDao target = new UserDao();
+    private iuserDao target = new userDao();
 
     @Override
     public void save() {

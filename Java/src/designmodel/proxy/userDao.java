@@ -1,6 +1,6 @@
-package DesignModel.Proxy;
+package designmodel.proxy;
 
-public class UserDao implements IUserDao {
+public class userDao implements iuserDao {
     @Override
     public void save() {
         System.out.println("模拟：保存用户！");
