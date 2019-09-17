@@ -17,7 +17,6 @@ public class UseCAS {
                     System.out.println('a');
                     flag=true;
                 }
-
             }
         });
 
@@ -32,7 +31,6 @@ public class UseCAS {
                     System.out.println('b');
                     flag=false;
                 }
-
             }
         });
 
