@@ -1,7 +1,5 @@
 import java.io.*;
 import java.util.*;
-class Test {
-}
 public class test
 {
     public static void main(String args[])
