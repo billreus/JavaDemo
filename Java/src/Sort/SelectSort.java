@@ -1,6 +1,7 @@
 package Sort;
 
 /**
+ * 选择排序
  * @Author liu
  * @Date 2019/9/25 19:59
  */
@@ -13,11 +14,16 @@ public class SelectSort {
         }
     }
     public static int[] sort(int[] nums){
-        for(int i = 0; i < nums.length - 1 ; i++){
-            for(int j = 0; j <  nums.length - 1 - i; j++){
-                if(nums[j] > nums[j+1]){
-                    SwapUtil.swap(nums, j, j+1);
+        int minIndex = 0;
+        for(int i = 0; i < nums.length ; i++){
+            minIndex = i;
+            for(int j = i + 1; j < nums.length ; j++){
+                if(nums[j] < nums[minIndex]){
+                    minIndex = j;
                 }
+            }
+            if(minIndex != i){
+                SwapUtil.swap(nums, i, minIndex);
             }
         }
         return nums;
