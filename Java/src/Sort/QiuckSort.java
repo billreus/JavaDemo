@@ -1,6 +1,6 @@
 package Sort;
 
-public class qiuckSort {
+public class QiuckSort {
 
     public static void main(String args[]){
         int n[] = {10,2,7,5,3,9,6,21,12};
