@@ -19,8 +19,9 @@ public class SingletonSafe {
     public static SingletonSafe getUniqueInstanceSafe(){
         if(uniqueInstanceSafe == null){
             synchronized (SingletonSafe.class){
-                if(uniqueInstanceSafe == null)
+                if(uniqueInstanceSafe == null){
                     uniqueInstanceSafe = new SingletonSafe();
+                }
             }
         }
         return uniqueInstanceSafe;

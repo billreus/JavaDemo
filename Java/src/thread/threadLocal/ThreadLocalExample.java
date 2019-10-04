@@ -1,9 +1,10 @@
-package ThreadLocal;
+package thread.threadLocal;
 
+/**
+ * 每个线程都有自己的本地内存
+ */
 public class ThreadLocalExample {
-    /**
-     * 每个线程都有自己的本地内存
-     */
+
     public static void main(String[] args){
         ThreadLocal threadLocal = new ThreadLocal();
         Thread thread1 = new Thread(() ->{

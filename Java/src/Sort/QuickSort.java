@@ -5,11 +5,11 @@ public class QuickSort {
     public static void main(String args[]){
         int[] nums = {7, 8, 6, 2, 3, 4, 15, 23, 1, 1, 56};
         sort(nums, 0, nums.length - 1);
-        for(int i=0; i<nums.length; i++) {
-            System.out.print(nums[i]+" ");
+        for (int num : nums) {
+            System.out.print(num + " ");
         }
     }
-    public static void sort(int[] nums, int l, int r){
+    private static void sort(int[] nums, int l, int r){
         if(l >= r){
             return ;
         }
@@ -26,9 +26,8 @@ public class QuickSort {
                 SwapUtil.swap(nums, start, end);
             }
         }
-        //此时strat和end是一个值
+        //此时start和end是一个值
         SwapUtil.swap(nums, index, start - 1);
-        //TODO 为什么用0和len不行，得l，r
         sort(nums, l, start - 1);
         sort(nums, end + 1, r);
 

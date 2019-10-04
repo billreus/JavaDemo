@@ -1,9 +1,9 @@
-package PrintABABAB;
+package thread.printABABAB;
 
 public class UseSyn {
     public static void main(String[] args){
         final UseSyn useSyn = new UseSyn();
-        Thread t1 = new Thread(useSyn::printA);
+        Thread t1 = new Thread(()->useSyn.printA());
         Thread t2 = new Thread(useSyn::printB);
         t1.start();
         t2.start();
